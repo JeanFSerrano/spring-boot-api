@@ -6,12 +6,18 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
+
 @Entity
+
 public class ClientModel {
 
     private UUID id;
     private String name;
-    private String email;
+    private String dataNascimento;
+    private String logradouro;
+    private String cep;
+    private int numero;
+    private String cidade;
 
     public ClientModel(){}
 
@@ -32,12 +38,45 @@ public class ClientModel {
         this.name = name;
     }
 
-    public String getEmail() {
-        return email;
+    public String getDataNascimento() {
+        return dataNascimento;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setDataNascimento(String dataNascimento) {
+        this.dataNascimento = dataNascimento;
     }
 
+    public String getLogradouro() {
+        return logradouro;
+    }
+
+    public void setLogradouro(String logradouro) {
+        this.logradouro = logradouro;
+    }
+
+    public String getCep() {
+        return cep;
+    }
+
+    public void setCep(String cep) {
+        this.cep = cep;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+  
 }
